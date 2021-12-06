@@ -14,8 +14,8 @@
   <body>
     <div class="container">
       <h1>Weekly Weather</h1>
-
-      <form>
+      <br />
+      <form id="searchForm">
         <div class="row">
           <div class="col-9">
             <input
@@ -31,19 +31,65 @@
         <div class="row">
           <div class="col-6">
             <h1>London</h1>
-            <p>Wednesday December 1</p>
+            <p id="date">Wednesday December 1</p>
             <p>21:47, cloudy with rain</p>
           </div>
           <div class="col-6">
             <div class="temp-container">
-              <img src="media/raincloud.png.png" width="40" height="45" />
+              <img src="media/raincloud.png.png" width="75" height="80" />
               <span id="temp">6</span>
-              <span id="degrees">℃|°F</span>
+              <span id="degrees">℃ |°F</span>
               <p>wind: 5mph, humidity: 67%</p>
             </div>
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <div class="row icons">
+        <span class="col-sm-2">
+          <img id="cloudy" src="media/cloud.png.png" width="50" />
+        </span>
+        <span class="col-sm-2">
+          <img id="cloudy" src="media/cloud.png.png" width="50" />
+        </span>
+        <span class="col-sm-2">
+          <img id="raincloud" src="media/raincloud.png.png" width="50" />
+        </span>
+        <span class="col-sm-2">
+          <img id="suncloud" src="media/suncloud.png.png" " width="50">
+        </span>
+        <span class="col-sm-2">
+          <img id="sunshine" src="media/sun.png.png" width="50" />
+        </span>
+      </div>
+
+      <div class="row days">
+        <span class="col-sm-2">
+          <h6>Tue</h6>
+        </span>
+        <span class="col-sm-2">
+          <h6>Wed</h6>
+        </span>
+        <span class="col-sm-2">
+          <h6>Thu</h6>
+        </span>
+        <span class="col-sm-2">
+          <h6>Fri</h6>
+        </span>
+        <span class="col-sm-2">
+          <h6>Sat</h6>
+        </span>
+      </div>
+
+      <div class="row temp">
+        <span class="col-sm-2"> 10°|14° </span>
+        <span class="col-sm-2"> 12°|16° </span>
+        <span class="col-sm-2"> 15°|18° </span>
+        <span class="col-sm-2"> 12°|15° </span>
+        <span class="col-sm-2"> 9°|13° </span>
+      </div>
+      <br />
     </div>
     <script src="src/weatherapp.js"></script>
   </body>
