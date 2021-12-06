@@ -1,18 +1,23 @@
 h1 {
   font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  padding-left: 260px;
 }
 #searchForm {
   display: block;
   margin: 0 auto;
+  padding-left: 270px;
 }
-
+h2 {
+  font-family: "Fira Sans", sans-serif;
+}
 #date {
   margin-bottom: 0;
   font-weight: bold;
 }
 
 .container {
-  width: 100%;
+  width: 300px;
   display: block;
   margin: 40px 40px 80px;
   border: solid 1px black;
@@ -27,4 +32,18 @@ h1 {
 #degrees {
   font-size: 25px;
   font-weight: bolder;
+}
+
+.weatherInfo {
+  padding-left: 50px;
+}
+
+#dayRow {
+  text-align: center;
+}
+#iconRow {
+  text-align: center;
+}
+#tempRow {
+  text-align: center;
 }

@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeeklyWeatherApp</title>
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -27,10 +35,10 @@
           </div>
         </div>
       </form>
-      <div class="weather info">
+      <div class="weatherInfo">
         <div class="row">
           <div class="col-6">
-            <h1>London</h1>
+            <h2>London</h2>
             <p id="date">Wednesday December 1</p>
             <p>21:47, cloudy with rain</p>
           </div>
@@ -46,7 +54,7 @@
       </div>
       <br />
       <br />
-      <div class="row icons">
+      <div class="row icons" id="iconRow">
         <span class="col-sm-2">
           <img id="cloudy" src="media/cloud.png.png" width="50" />
         </span>
@@ -64,7 +72,7 @@
         </span>
       </div>
 
-      <div class="row days">
+      <div class="row days" id="dayRow">
         <span class="col-sm-2">
           <h6>Tue</h6>
         </span>
@@ -82,7 +90,7 @@
         </span>
       </div>
 
-      <div class="row temp">
+      <div class="row temp" id="tempRow">
         <span class="col-sm-2"> 10°|14° </span>
         <span class="col-sm-2"> 12°|16° </span>
         <span class="col-sm-2"> 15°|18° </span>
