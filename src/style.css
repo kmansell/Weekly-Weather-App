@@ -2,6 +2,7 @@ h1 {
   font-size: 20px;
   font-family: "Fira Sans", sans-serif;
   padding-left: 260px;
+  color: #8d8c8d;
 }
 #searchForm {
   display: block;
@@ -10,12 +11,17 @@ h1 {
 }
 h2 {
   font-family: "Fira Sans", sans-serif;
+  color: #8d8c8d;
 }
 #date {
   margin-bottom: 0;
   font-weight: bold;
+  color: #8d8c8d;
 }
 
+#synopsis {
+  text-transform: capitalize;
+}
 .container {
   width: 300px;
   display: block;
@@ -40,11 +46,20 @@ h2 {
   color: #0972e1;
   font-weight: bold;
 }
+#mph {
+  color: #0972e1;
+  font-weight: bold;
+}
+
 #humidity {
   color: #0972e1;
   font-weight: bold;
 }
 
+#percentage {
+  color: #0972e1;
+  font-weight: bold;
+}
 .weatherInfo {
   padding-left: 50px;
 }
