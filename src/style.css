@@ -28,6 +28,7 @@ h2 {
   margin: 40px 40px 80px;
   border: solid 1px black;
   margin-bottom: 10px;
+  background-color: rgb(243, 239, 234);
 }
 
 #temp {
