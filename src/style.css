@@ -38,6 +38,10 @@ h2 {
   color: #0972e1;
   font-weight: bold;
 }
+#weatherIcon {
+  width: 100px;
+  height: 100px;
+}
 #degrees {
   font-size: 25px;
   font-weight: bolder;
