@@ -40,6 +40,7 @@ function showTemp(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  celciusTemp = response.data.main.temp;
 }
 
 function search(city) {
@@ -53,8 +54,29 @@ function handleSubmit(event) {
   search(cityInputSearch.value);
 }
 
+let celciusTemp = null;
+
 search("London");
 
 let form = document.querySelector("#searchForm");
 form.addEventListener("submit", handleSubmit);
 let city = "London";
+
+function showFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (celciusTemp * 9) / 5 + 32;
+  let tempElement = document.querySelector("#temp");
+  tempElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheitUnit");
+fahrenheitLink.addEventListener("click", showFahrenheit);
+
+function showCelcius(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#temp");
+  tempElement.innerHTML = Math.round(celciusTemp);
+}
+
+let celciusLink = document.querySelector("#celciusUnit");
+celciusLink.addEventListener("click", showCelcius);
