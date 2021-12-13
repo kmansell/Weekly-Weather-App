@@ -42,7 +42,19 @@ function showTemp(response) {
   );
 }
 
-let apiURL =
-  "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0f30e5290972eab7b9c525cbd0acc84b&units=metric";
+function search(city) {
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0f30e5290972eab7b9c525cbd0acc84b&units=metric`;
+  axios.get(apiURL).then(showTemp);
+}
 
-axios.get(apiURL).then(showTemp);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputSearch = document.querySelector("#cityInput");
+  search(cityInputSearch.value);
+}
+
+search("London");
+
+let form = document.querySelector("#searchForm");
+form.addEventListener("submit", handleSubmit);
+let city = "London";
