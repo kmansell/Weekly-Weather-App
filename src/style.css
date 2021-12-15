@@ -73,12 +73,16 @@ h2 {
   padding-left: 50px;
 }
 
-#dayRow {
+.weatherForecast {
   text-align: center;
 }
-#iconRow {
-  text-align: center;
+
+.forecastDay {
+  font-size: 18px;
 }
-#tempRow {
-  text-align: center;
+.forecastTemp {
+  font-size: 14px;
+}
+.forecastTempMax {
+  font-weight: bold;
 }

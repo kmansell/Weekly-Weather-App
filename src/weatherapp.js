@@ -80,3 +80,10 @@ function showCelcius(event) {
 
 let celciusLink = document.querySelector("#celciusUnit");
 celciusLink.addEventListener("click", showCelcius);
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#tempRow");
+  forecastElement.innerHTML = "forecast";
+}
+
+displayForecast();
