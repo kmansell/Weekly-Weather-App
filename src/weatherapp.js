@@ -91,4 +91,24 @@ celciusLink.addEventListener("click", showCelcius);
 function displayForecast(response) {
   console.log(response.data.daily);
   let forecastElement = document.querySelector("#weatherForecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+          <div class="forecastDay">${day}</div>
+          <img id="cloudy" src="media/cloud.png.png" width="50" />
+          <div class="forecastTemp">
+            <span class="forecastTempMax">14°</span>
+            <span class="forecastTempMin"> | 10°</span>
+          </div>
+          <br />
+        </div>
+      </div>
+  `;
+  });
+  forecastHTML.innerHTML = forecastHTML;
 }
+displayForecast();
